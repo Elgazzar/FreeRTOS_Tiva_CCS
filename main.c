@@ -21,6 +21,8 @@ int main(void)
 {
     LEDS_PORT_init();
     led1_init();
+    led2_init();
+    led3_init();
     /*Add Task For Led*/
     xTaskCreate(LED_Task, (const portCHAR *) "Led Task", 150, NULL, 3 ,NULL);
 
